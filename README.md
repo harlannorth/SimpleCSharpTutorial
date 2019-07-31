@@ -88,6 +88,7 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
         services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
     }
     ```
+6. Update the Values Controller to be a Todo
 6. Implement a Get All Operation
     1. Do code
     2. Spin up service from command line
