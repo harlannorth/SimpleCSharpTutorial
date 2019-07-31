@@ -42,7 +42,7 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
     1. Create new Models folder
     2. Add file in Models folder named Todo.cs
     3. Put this code in 
-    ...
+    ```
     namespace TodoApi.Models
 {
     public class TodoItem
@@ -52,7 +52,7 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
         public bool IsComplete { get; set; }
     }
 }
-...
+```
     4. Note that this matches out Todo.ts!
 5. Create Datastore
     1. We're going to quickly specify an in memory database that will be lost every time we restart but will be good enough for our work today
