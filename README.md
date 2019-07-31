@@ -39,7 +39,22 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
     2. Open Terminal to same folder
     3. run `> dotnet new webapi -i TodoApi`
 4. Create Model
+    1. Create new Models folder
+    2. Add file in Models folder named Todo.cs
+    3. Put this code in 
+    `namespace TodoApi.Models
+{
+    public class TodoItem
+    {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public bool IsComplete { get; set; }
+    }
+}`
+    4. Note that this matches out Todo.ts!
 5. Create Datastore
+    1. We're going to quickly specify an in memory database that will be lost every time we restart but will be good enough for our work today
+    2. Create a new file in Models called TodoContext.cs
 6. Implement a Get All Operation
     1. Do code
     2. Spin up service from command line
@@ -84,3 +99,4 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 - IIS & other web servers
 - Nuget
 - Angular (in any way)
+- EntityFramework
