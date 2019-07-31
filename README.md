@@ -1,23 +1,21 @@
-#Building a Web Service in C# 
+# Building a Web Service in C# 
 
 Summary: We are going to set up a simple web service coded in C# using .Net Core.  To accomplish this we’ll learn some C# fundamentals, then use .Net’s scaffolding to create a web api and development server we can run.  We will interact with this web api using a simple angular app.
 
-#Installed Prerequisites:
-##Node & npm 
-###https://nodejs.org/en/
-###npm install npm@latest -g
-##Angular CLI
+# Installed Prerequisites:
+## Node & npm 
+### https://nodejs.org/en/
+### npm install npm@latest -g
+## Angular CLI
+## .Net (What version? How?)
+## VS Code or similar editor
+### With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 
-
-.Net (What version? How?)
-VS Code or similar editor
-With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
-
-C#
-According to Wikipedia
-C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
-General purpose language
-Strongly Typed
+# C#
+1. According to Wikipedia
+ - C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+ -- General purpose language
+ -- Strongly Typed
 Some exceptions…
 Object Oriented
 Some exceptions…
