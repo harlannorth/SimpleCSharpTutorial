@@ -23,11 +23,9 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 - Object Oriented
 - History, Open Source status
 - Anatomy of a POCO
+- Anatomy of an 'n-teir web app'
 - Anatomy of our project
-- .Net Core
-    - What is it vs. What it isn’t
-    - Where it can be deployed
-    - ASP.Net Core
+
 
 # Exercise
 1. Prerequisite testing
@@ -75,6 +73,7 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 - https://www.sitepoint.com/angular-2-tutorial/  (THIS IS OLD AVOID IT)
 - https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 # Important Topics not covered
+- .Net Core
 - In depth HTTP 
 - Object Oriented / Inheritance / Interfaces
 - Unit Testing
