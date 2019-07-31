@@ -10,6 +10,10 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
 - .Net (What version? How?)
 - VS Code or similar editor
     - With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
+- Other tools I will use today
+    - Command prompt/powershell
+    - Postman
+    - Git (Tortoisegit, Github)
 
 # C#
 ## According to Wikipedia
@@ -17,17 +21,13 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 - General purpose language
 - Strongly Typed
 - Object Oriented
-
 - History, Open Source status
-- Other tools I will use today
-    - Command prompt/powershell
-    - Postman
-    - Git (Tortoisegit, Github)
-
-# .Net Core
-- What is it vs. What it isn’t
-- Where it can be deployed
-- ASP.Net Core
+- Anatomy of a POCO
+- Anatomy of our project
+- .Net Core
+    - What is it vs. What it isn’t
+    - Where it can be deployed
+    - ASP.Net Core
 
 # Exercise
 1. Prerequisite testing
