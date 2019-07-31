@@ -2,14 +2,14 @@
 
 Summary: We are going to set up a simple web service coded in C# using .Net Core.  To accomplish this we’ll learn some C# fundamentals, then use .Net’s scaffolding to create a web api and development server we can run.  We will interact with this web api using a simple angular app.
 
-# Installed Prerequisites:
-## Node & npm 
-### https://nodejs.org/en/
-### npm install npm@latest -g
-## Angular CLI
-## .Net (What version? How?)
-## VS Code or similar editor
-### With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
+## Installed Prerequisites:
+- Node & npm 
+-- https://nodejs.org/en/
+-- npm install npm@latest -g
+- Angular CLI
+-.Net (What version? How?)
+- VS Code or similar editor
+-- With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 
 # C#
 1. According to Wikipedia
