@@ -73,6 +73,21 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
         }
     }
     ```
+    4. Update Startup.cs
+    5. Add in the using block:
+    ```
+    using Microsoft.EntityFrameworkCore;
+    using TodoApi.Models;
+    ```
+    6. Replace the function ConfigureServices with
+    ```
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddDbContext<TodoContext>(opt =>
+            opt.UseInMemoryDatabase("TodoList"));
+        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+    }
+    ```
 6. Implement a Get All Operation
     1. Do code
     2. Spin up service from command line
