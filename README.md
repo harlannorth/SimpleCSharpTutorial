@@ -57,6 +57,22 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 5. Create Datastore
     1. We're going to quickly specify an in memory database that will be lost every time we restart but will be good enough for our work today
     2. Create a new file in Models called TodoContext.cs
+    3. Place the following in TodoContext.cs
+    ```
+    using Microsoft.EntityFrameworkCore;
+    namespace TodoApi.Models
+    {
+        public class TodoContext : DbContext
+        {
+            public TodoContext(DbContextOptions<TodoContext> options)
+                : base(options)
+            {
+            }
+
+            public DbSet<TodoItem> TodoItems { get; set; }
+        }
+    }
+    ```
 6. Implement a Get All Operation
     1. Do code
     2. Spin up service from command line
