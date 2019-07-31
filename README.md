@@ -51,19 +51,19 @@ Demonstrate working code with postman
 Connect with angular app
 What we learned from this
 Simple process that could be dockerized provides back end for front end application
-References
-https://docs.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-2.2&tabs=windows
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.2&tabs=visual-studio
-https://www.sitepoint.com/angular-2-tutorial/  (THIS IS OLD AVOID IT)
-https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
-Important Topics not covered
-In depth HTTP 
-Object Oriented / Inheritance / Interfaces
-Unit Testing
-IL / .Net (what makes C# into machine code)
-Dependency Injection
-Error Handling
-Async/Await, Tasks, concurrency
-IIS & other web servers
-Nuget
-Angular (in any way)
+# References
+- https://docs.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-2.2&tabs=windows
+- https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.2&tabs=visual-studio
+- https://www.sitepoint.com/angular-2-tutorial/  (THIS IS OLD AVOID IT)
+- https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+# Important Topics not covered
+- In depth HTTP 
+- Object Oriented / Inheritance / Interfaces
+- Unit Testing
+- IL / .Net (what makes C# into machine code)
+- Dependency Injection
+- Error Handling
+- Async/Await, Tasks, concurrency
+- IIS & other web servers
+- Nuget
+- Angular (in any way)
