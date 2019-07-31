@@ -30,27 +30,45 @@ C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming lang
 - ASP.Net Core
 
 # Exercise
-1. Every front end needs services that connect it to the backend/data storage
+1. Prerequisite testing
+2. Every front end needs services that connect it to the backend/data storage
     1. Front end will be a simple provided Angular App
     2. Get this from Github
     3. Run from command line
-
-Our back end will be returning static data rather than accessing a database at this time
-Advanced, perhaps point to an AWS dynamodb service?
-Get Partial C# project with layout from GitHub
-dotnet new webapi -o TodoApi
-Implement a Get Operation
-Do code
-Spin up service from command line
-Demonstrate working with postman
-Connect with angular app
-Implement Post Operation
-Do Code
-Spin up service from command line
-Demonstrate working code with postman
-Connect with angular app
-What we learned from this
-Simple process that could be dockerized provides back end for front end application
+2. Our back end will be returning static data rather than accessing a database at this time
+3. Get project scaffolding
+    1. Open Code to a new folder
+    2. Open Terminal to same folder
+    3. run `> dotnet new webapi -i TodoApi`
+4. Create Model
+5. Create Datastore
+6. Implement a Get All Operation
+    1. Do code
+    2. Spin up service from command line
+    3. Demonstrate working with postman
+    4. Connect with angular app
+7. Implement a Get Single Operation
+    1. Do code
+    2. Spin up service from command line
+    3. Demonstrate working with postman
+    4. Connect with angular app
+7. Implement Post Operation
+    1. Do Code
+    2. Spin up service from command line
+    3.  Demonstrate working code with postman
+    4. Connect with angular app
+8. Implement Put Operation
+    1. Do Code
+    2. Spin up service from command line
+    3. Demonstrate working code with postman
+    4. Connect with angular app
+9. Implement Delete Operation
+    1. Do Code
+    2. Spin up service from command line
+    3. Demonstrate working code with postman
+    4. Connect with angular app
+10. What we learned from this
+    1. Simple process that could be dockerized provides back end for front end application
 # References
 - https://docs.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-2.2&tabs=windows
 - https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.2&tabs=visual-studio
