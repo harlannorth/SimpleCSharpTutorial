@@ -12,46 +12,29 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
     - With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 
 # C#
-1. According to Wikipedia
- - C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
- -- General purpose language
- -- Strongly Typed
-Some exceptions…
-Object Oriented
-Some exceptions…
-History, Open Source status
-Versions
-Future
-Coding Environments
-Visual Studio
-The primary IDE from MS
-Tends to be very large and expensive
-Has some of the best tools and is used in most workplaces
-Rider
-Made by Jetbrains, who makes Resharper
-Cheaper, but not cheap
-Has great reviews 
-VS Code
-Free
-Cross Platform
-Still made by MS!
-Our choice for today
-Other tools I will use today
-Command prompt/powershell
-Postman
-LinqPad
-Git 
-Tortoisegit
-Github
-.Net Core
-What is it vs. What it isn’t
-Where it can be deployed
-ASP.Net Core
-Exercise
-Every front end needs services that connect it to the backend/data storage
-Front end will be a simple provided Angular App
-Get this from Github
-Run from command line
+## According to Wikipedia
+C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+- General purpose language
+- Strongly Typed
+- Object Oriented
+
+- History, Open Source status
+- Other tools I will use today
+    - Command prompt/powershell
+    - Postman
+    - Git (Tortoisegit, Github)
+
+# .Net Core
+- What is it vs. What it isn’t
+- Where it can be deployed
+- ASP.Net Core
+
+# Exercise
+1. Every front end needs services that connect it to the backend/data storage
+    1. Front end will be a simple provided Angular App
+    2. Get this from Github
+    3. Run from command line
+
 Our back end will be returning static data rather than accessing a database at this time
 Advanced, perhaps point to an AWS dynamodb service?
 Get Partial C# project with layout from GitHub
