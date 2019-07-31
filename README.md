@@ -5,11 +5,11 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
 ## Installed Prerequisites:
 - Node & npm 
     - https://nodejs.org/en/
--- npm install npm@latest -g
+    - npm install npm@latest -g
 - Angular CLI
--.Net (What version? How?)
+- .Net (What version? How?)
 - VS Code or similar editor
--- With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
+    - With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 
 # C#
 1. According to Wikipedia
