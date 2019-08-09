@@ -17,7 +17,7 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
 
 # C#
 ## According to Wikipedia
-C#[b] (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
 - General purpose language
 - Strongly Typed
 - Object Oriented
