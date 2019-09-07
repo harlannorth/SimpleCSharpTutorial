@@ -61,7 +61,12 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     }
     ```
     4. Note that this matches out Todo.ts!
-5. Ignore/Delete the weatherforcastcontroller and Weatherforecast.cs model
+5. Handle debris
+- Delete the weatherforcastcontroller and Weatherforecast.cs model
+- update line 24 of launch settings to 
+```
+"applicationUrl": "https://localhost:5001;http://localhost:5000",
+```
 6. Create a controller
 - New file in the Controllers Folder called TodoController.cs
 - Insert route outline
