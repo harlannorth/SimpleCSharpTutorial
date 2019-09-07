@@ -204,9 +204,36 @@ This is a simple static dictionary that will only live as long as our service is
     3. Connect with angular app
 9. Implement a Get Single Operation
     1. Do code
+    ```
+            // POST api/values
+        [HttpPost]
+        public TodoItem Post([FromBody] TodoItem value)
+        {
+            if (Todos == null)
+            {
+                throw new Exception("Todos is null");
+            }
+
+            var insertValue = new TodoItem {
+                Id = TodoCount.Value,
+                IsComplete = value.IsComplete,
+                Name = value.Name
+            };
+
+            if (!Todos.TryAdd(TodoCount.Value, insertValue))
+            {
+                throw new Exception("Todo already exists");
+            }
+            
+            TodoCount++;
+            return insertValue;
+        }
+    ```
     2. Spin up service from command line
-    3. Demonstrate working with postman
-    4. Connect with angular app
+    ```
+    dotnet run
+    ```
+    3. Connect with angular app
 10. Implement Put/Update Operation
     1. Do Code
     ```
@@ -242,9 +269,28 @@ This is a simple static dictionary that will only live as long as our service is
     3. Connect with angular app
 11. Implement Delete Operation
     1. Do Code
+    ```
+            // DELETE api/values/5
+        [HttpDelete("{id}")]
+        public void Delete(long id)
+        {
+            if (Todos == null)
+            {
+                throw new Exception("Todos is null");
+            }
+
+            if (!Todos.ContainsKey(id))
+            {
+                throw new Exception("Todo doesn't exist");
+            }
+            Todos.Remove(id);
+        }
+    ```
     2. Spin up service from command line
-    3. Demonstrate working code with postman
-    4. Connect with angular app
+    ```
+    dotnet run
+    ```
+    3. Connect with angular app
 12. What we learned from this
     1. Simple process that could be dockerized provides back end for front end application
 # References
