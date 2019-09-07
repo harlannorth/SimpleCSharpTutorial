@@ -45,6 +45,32 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     2. Open Terminal to CSharpeService/TodoApi
     3. run `dotnet new webapi -i TodoApi`
     4. Open this folder in your editor
+4. Handle debris
+- Delete the weatherforcastcontroller and Weatherforecast.cs model
+- update line 24 of launch settings to 
+```
+"applicationUrl": "https://localhost:5001;http://localhost:5000",
+```
+5. Handle CORS by updating startup.cs
+- line 22 add 
+```
+readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+```
+- Line 30 add
+```
+              services.AddCors(options =>
+                {
+                    options.AddPolicy(MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://locahost:4200");
+                    });
+                });
+```
+- Line 49 add
+```
+app.UseCors(MyAllowSpecificOrigins);
+```
 4. Create Model
     1. Create new Models folder in TodoApi
     2. Add file in Models folder named TodoItem.cs
@@ -61,12 +87,6 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     }
     ```
     4. Note that this matches out Todo.ts!
-5. Handle debris
-- Delete the weatherforcastcontroller and Weatherforecast.cs model
-- update line 24 of launch settings to 
-```
-"applicationUrl": "https://localhost:5001;http://localhost:5000",
-```
 6. Create a controller
 - New file in the Controllers Folder called TodoController.cs
 - Insert route outline
