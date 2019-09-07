@@ -40,11 +40,11 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     - npm install
     - ng serve
     - open http://localhost:4200/
-2. Our back end will be returning static data rather than accessing a database at this time
 3. Get project scaffolding
-    1. Open Code to a new folder
-    2. Open Terminal to same folder
-    3. run `> dotnet new webapi -i TodoApi`
+    1. In CSharpService create a new folder TodoApi
+    2. Open Terminal to CSharpeService/TodoApi
+    3. run `dotnet new webapi -i TodoApi`
+    4. Open this folder in your editor
 4. Create Model
     1. Create new Models folder
     2. Add file in Models folder named Todo.cs
