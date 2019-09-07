@@ -46,8 +46,8 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     3. run `dotnet new webapi -i TodoApi`
     4. Open this folder in your editor
 4. Create Model
-    1. Create new Models folder
-    2. Add file in Models folder named Todo.cs
+    1. Create new Models folder in TodoApi
+    2. Add file in Models folder named TodoItem.cs
     3. Put this code in 
     ```
     namespace TodoApi.Models
@@ -61,6 +61,45 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     }
     ```
     4. Note that this matches out Todo.ts!
+5. Ignore/Delete the weatherforcastcontroller and Weatherforecast.cs model
+6. Create a controller
+- New file in the Controllers Folder called TodoController.cs
+- Insert route outline
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using TodoApi.Models;
+
+namespace TodoBackend.Controllers
+{
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TodoController : ControllerBase
+    {
+        private static long? TodoCount;
+        private static Dictionary<long, TodoItem> Todos;
+
+        public TodoController()
+        {
+            if (!TodoCount.HasValue)
+            {
+                TodoCount = 0;
+            }
+
+            if (Todos == null)
+            {
+                Todos = new Dictionary<long, TodoItem>();
+            }
+
+        }
+
+    }
+}
+```
 5. Create Datastore
 This is a simple static dictionary that will only live as long as our service is running.
 ```
