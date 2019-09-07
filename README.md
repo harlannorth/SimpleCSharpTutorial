@@ -28,10 +28,13 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
 - Anatomy of a controller
 
 # Exercise
-1. Prerequisite testing
+1. Prerequisite 
+- Make a new folder CSharpService
+
 2. Every front end needs services that connect it to the backend/data storage
     1. Front end will be a simple provided Angular App
     2. Get this from Github
+    
     3. Run from command line
 2. Our back end will be returning static data rather than accessing a database at this time
 3. Get project scaffolding
