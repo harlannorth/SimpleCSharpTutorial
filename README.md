@@ -55,34 +55,39 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     ```
     4. Note that this matches out Todo.ts!
 5. Create Datastore
-
+This is a simple static dictionary that will only live as long as our service is running.
+```
+        private static long? TodoCount;
+        private static Dictionary<long, TodoItem> Todos;
+```
 6. Update the Values Controller to be a Todo
-6. Implement a Get All Operation
-    1. Do code
-    2. Spin up service from command line
-    3. Demonstrate working with postman
-    4. Connect with angular app
-7. Implement a Get Single Operation
-    1. Do code
-    2. Spin up service from command line
-    3. Demonstrate working with postman
-    4. Connect with angular app
 7. Implement Post Operation
     1. Do Code
     2. Spin up service from command line
     3.  Demonstrate working code with postman
     4. Connect with angular app
-8. Implement Put Operation
+8. Implement a Get All Operation
+    1. Do code
+    
+    2. Spin up service from command line
+    3. Demonstrate working with postman
+    4. Connect with angular app
+9. Implement a Get Single Operation
+    1. Do code
+    2. Spin up service from command line
+    3. Demonstrate working with postman
+    4. Connect with angular app
+10. Implement Put/Update Operation
     1. Do Code
     2. Spin up service from command line
     3. Demonstrate working code with postman
     4. Connect with angular app
-9. Implement Delete Operation
+11. Implement Delete Operation
     1. Do Code
     2. Spin up service from command line
     3. Demonstrate working code with postman
     4. Connect with angular app
-10. What we learned from this
+12. What we learned from this
     1. Simple process that could be dockerized provides back end for front end application
 # References
 - https://docs.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-2.2&tabs=windows
