@@ -30,7 +30,7 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
 - Anatomy of a controller
 
 # Exercise
-1. Prerequisite 
+1. Getting started 
 - Make a new folder CSharpService
 
 2. Every front end needs services that connect it to the backend/data storage
@@ -84,14 +84,14 @@ app.UseCors(MyAllowSpecificOrigins);
         public class TodoItem
         {
             public long Id { get; set; }
-            public string Name { get; set; }
+            public string Title { get; set; }
             public bool IsComplete { get; set; }
         }
     }
     ```
     4. Note that this matches out Todo.ts!
 6. Create a controller
-- New file in the Controllers Folder called TodoController.cs
+- New file in the Controllers Folder called TodosController.cs
 - Insert code outline
 ```
 using System;
@@ -129,7 +129,7 @@ namespace TodoApi.Controllers
 }
 ```
 7. Note theDatastore
-This is a simple static dictionary that will only live as long as our service is running.
+This is a simple static dictionary that will only live as long as our service is running, won't support concurrency!
 ```
         private static long? TodoCount;
         private static Dictionary<long, TodoItem> Todos;
@@ -165,7 +165,7 @@ This is a simple static dictionary that will only live as long as our service is
             var insertValue = new TodoItem {
                 Id = TodoCount.Value,
                 IsComplete = value.IsComplete,
-                Name = value.Name
+                Title = value.Title
             };
 
             if (!Todos.TryAdd(TodoCount.Value, insertValue))
