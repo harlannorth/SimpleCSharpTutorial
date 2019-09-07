@@ -73,7 +73,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TodoApi.Models;
 
-namespace TodoBackend.Controllers
+namespace TodoApi.Controllers
 {
 
     [Route("api/[controller]")]
