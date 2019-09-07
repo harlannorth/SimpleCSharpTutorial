@@ -55,39 +55,7 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     ```
     4. Note that this matches out Todo.ts!
 5. Create Datastore
-    1. We're going to quickly specify an in memory database that will be lost every time we restart but will be good enough for our work today
-    2. Create a new file in Models called TodoContext.cs
-    3. Place the following in TodoContext.cs
-    ```
-    using Microsoft.EntityFrameworkCore;
-    namespace TodoApi.Models
-    {
-        public class TodoContext : DbContext
-        {
-            public TodoContext(DbContextOptions<TodoContext> options)
-                : base(options)
-            {
-            }
 
-            public DbSet<TodoItem> TodoItems { get; set; }
-        }
-    }
-    ```
-    4. Update Startup.cs
-    5. Add in the using block:
-    ```
-    using Microsoft.EntityFrameworkCore;
-    using TodoApi.Models;
-    ```
-    6. Replace the function ConfigureServices with
-    ```
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddDbContext<TodoContext>(opt =>
-            opt.UseInMemoryDatabase("TodoList"));
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-    }
-    ```
 6. Update the Values Controller to be a Todo
 6. Implement a Get All Operation
     1. Do code
