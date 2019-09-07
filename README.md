@@ -63,7 +63,7 @@ readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
                     options.AddPolicy(MyAllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://locahost:4200");
+                        builder.WithOrigins("http://localhost:4200");
                     });
                 });
 ```
