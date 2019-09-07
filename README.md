@@ -122,15 +122,38 @@ This is a simple static dictionary that will only live as long as our service is
 
         }
 ```
-6. Update the Values Controller to be a Todo
 7. Implement Post Operation
     1. Do Code
+    ```
+            // POST api/values
+        [HttpPost]
+        public TodoItem Post([FromBody] TodoItem value)
+        {
+            if (Todos == null)
+            {
+                throw new Exception("Todos is null");
+            }
+
+            var insertValue = new TodoItem {
+                Id = TodoCount.Value,
+                IsComplete = value.IsComplete,
+                Name = value.Name
+            };
+
+            if (!Todos.TryAdd(TodoCount.Value, insertValue))
+            {
+                throw new Exception("Todo already exists");
+            }
+            
+            TodoCount++;
+            return insertValue;
+        }
+     ```
     2. Spin up service from command line
     3.  Demonstrate working code with postman
     4. Connect with angular app
 8. Implement a Get All Operation
     1. Do code
-    
     2. Spin up service from command line
     3. Demonstrate working with postman
     4. Connect with angular app
