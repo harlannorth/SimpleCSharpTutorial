@@ -209,9 +209,37 @@ This is a simple static dictionary that will only live as long as our service is
     4. Connect with angular app
 10. Implement Put/Update Operation
     1. Do Code
+    ```
+            // PUT api/values/5
+        [HttpPut("{id}")]
+        public TodoItem Put(long id, [FromBody] TodoItem value)
+        {
+            if (Todos == null)
+            {
+                throw new Exception("Todos is null");
+            }
+
+            if (id != value.Id)
+            {
+                throw new Exception("Id and Todo Id mismatch");
+            }
+
+            if (!Todos.ContainsKey(id))
+            {
+                throw new Exception("Todo doesn't exist");
+            }
+
+            Todos.Remove(id);
+            Todos.Add(id, value);
+            return Todos[id];    
+
+        }
+        ```
     2. Spin up service from command line
-    3. Demonstrate working code with postman
-    4. Connect with angular app
+    ```
+    dotnet run
+    ```
+    3. Connect with angular app
 11. Implement Delete Operation
     1. Do Code
     2. Spin up service from command line
