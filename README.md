@@ -34,8 +34,12 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
 2. Every front end needs services that connect it to the backend/data storage
     1. Front end will be a simple provided Angular App
     2. Get this from Github
-    
+    - git clone https://github.com/harlannorth/todo-app.git
     3. Run from command line
+    - cd todo-app
+    - npm install
+    - ng serve
+    - open http://localhost:4200/
 2. Our back end will be returning static data rather than accessing a database at this time
 3. Get project scaffolding
     1. Open Code to a new folder
