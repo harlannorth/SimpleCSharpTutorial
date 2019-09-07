@@ -77,7 +77,7 @@ readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 ```
 app.UseCors(MyAllowSpecificOrigins);
 ```
-4. Create Model
+6. Create Model
     1. Create new Models folder in TodoApi
     2. Add file in Models folder named TodoItem.cs
     3. Put this code in 
@@ -93,7 +93,7 @@ app.UseCors(MyAllowSpecificOrigins);
     }
     ```
     4. Note that this matches out Todo.ts!
-6. Create a controller
+7. Create a controller
 - New file in the Controllers Folder called TodosController.cs
 - Insert code outline
 ```
@@ -131,7 +131,7 @@ namespace TodoApi.Controllers
     }
 }
 ```
-7. Note theDatastore
+8. Note theDatastore
 This is a simple static dictionary that will only live as long as our service is running, won't support concurrency!
 ```
         private static long? TodoCount;
@@ -153,7 +153,7 @@ This is a simple static dictionary that will only live as long as our service is
 
         }
 ```
-7. Implement Post Operation
+9. Implement Post Operation
     1. Do Code
     ```
             // POST api/values
@@ -185,7 +185,7 @@ This is a simple static dictionary that will only live as long as our service is
     dotnet run
     ```
     3. Connect with angular app
-8. Implement a Get All Operation
+10. Implement a Get All Operation
     1. Do code
     ```
             // GET api/values
@@ -205,7 +205,7 @@ This is a simple static dictionary that will only live as long as our service is
     dotnet run
     ```
     3. Connect with angular app
-9. Implement a Get Single Operation
+11. Implement a Get Single Operation
     1. Do code
     ```
             // POST api/values
@@ -237,7 +237,7 @@ This is a simple static dictionary that will only live as long as our service is
     dotnet run
     ```
     3. Connect with angular app
-10. Implement Put/Update Operation
+12. Implement Put/Update Operation
     1. Do Code
     ```
             // PUT api/values/5
@@ -270,7 +270,7 @@ This is a simple static dictionary that will only live as long as our service is
     dotnet run
     ```
     3. Connect with angular app
-11. Implement Delete Operation
+13. Implement Delete Operation
     1. Do Code
     ```
             // DELETE api/values/5
@@ -294,7 +294,7 @@ This is a simple static dictionary that will only live as long as our service is
     dotnet run
     ```
     3. Connect with angular app
-12. What we learned from this
+14. What we learned from this
     1. Simple process that could be dockerized provides back end for front end application
 # References
 - https://docs.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-2.2&tabs=windows
