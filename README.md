@@ -91,7 +91,7 @@ app.UseCors(MyAllowSpecificOrigins);
     4. Note that this matches out Todo.ts!
 6. Create a controller
 - New file in the Controllers Folder called TodoController.cs
-- Insert route outline
+- Insert code outline
 ```
 using System;
 using System.Collections.Generic;
