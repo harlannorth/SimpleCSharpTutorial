@@ -7,8 +7,9 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
     - https://nodejs.org/en/
     - npm install npm@latest -g
 - Angular CLI
+    - npm install -g @angular/cli
 - .Net (What version? How?)
-    = https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.108-windows-x64-installer
+    - https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.108-windows-x64-installer
 - VS Code or similar editor
     - With https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp
 - Other tools I will use today
@@ -47,17 +48,17 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
     3. run `dotnet new webapi -i TodoApi`
     4. Open this folder in your editor
 4. Handle debris
-- Delete the weatherforcastcontroller and Weatherforecast.cs model
+- Delete the ValuesController.cs
 - update line 24 of launch settings to 
 ```
-"applicationUrl": "https://localhost:5001;http://localhost:5000",
+"applicationUrl": "https://localhost:3001;http://localhost:3000",
 ```
 5. Handle CORS by updating startup.cs
 - line 22 add 
 ```
 readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 ```
-- Line 30 add
+- Line 29 add
 ```
               services.AddCors(options =>
                 {
@@ -68,7 +69,7 @@ readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
                     });
                 });
 ```
-- Line 49 add
+- Line 53 add
 ```
 app.UseCors(MyAllowSpecificOrigins);
 ```
