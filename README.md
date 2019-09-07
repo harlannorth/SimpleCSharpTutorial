@@ -17,6 +17,9 @@ Summary: We are going to set up a simple web service coded in C# using .Net Core
     - Postman
     - Git (Tortoisegit, Github)
 
+SlideDeck:
+https://docs.google.com/presentation/d/1b0fSk83hGGmUuswDBqIS5EnewJmCb2C6JNE3-w_Z6o8/edit?usp=sharing
+
 # C#
 ## According to Wikipedia
 C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
