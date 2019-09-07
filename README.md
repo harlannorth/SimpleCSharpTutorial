@@ -100,11 +100,27 @@ namespace TodoBackend.Controllers
     }
 }
 ```
-5. Create Datastore
+7. Note theDatastore
 This is a simple static dictionary that will only live as long as our service is running.
 ```
         private static long? TodoCount;
         private static Dictionary<long, TodoItem> Todos;
+```
+8. Also note the constructor sets everything up
+```
+        public TodoController()
+        {
+            if (!TodoCount.HasValue)
+            {
+                TodoCount = 0;
+            }
+
+            if (Todos == null)
+            {
+                Todos = new Dictionary<long, TodoItem>();
+            }
+
+        }
 ```
 6. Update the Values Controller to be a Todo
 7. Implement Post Operation
