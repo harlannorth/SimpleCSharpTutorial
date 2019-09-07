@@ -106,12 +106,12 @@ namespace TodoApi.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class TodoController : ControllerBase
+    public class TodosController : ControllerBase
     {
         private static long? TodoCount;
         private static Dictionary<long, TodoItem> Todos;
 
-        public TodoController()
+        public TodosController()
         {
             if (!TodoCount.HasValue)
             {
@@ -136,7 +136,7 @@ This is a simple static dictionary that will only live as long as our service is
 ```
 8. Also note the constructor sets everything up
 ```
-        public TodoController()
+        public TodosController()
         {
             if (!TodoCount.HasValue)
             {
@@ -178,13 +178,30 @@ This is a simple static dictionary that will only live as long as our service is
         }
      ```
     2. Spin up service from command line
-    3.  Demonstrate working code with postman
-    4. Connect with angular app
+    ```
+    dotnet run
+    ```
+    3. Connect with angular app
 8. Implement a Get All Operation
     1. Do code
+    ```
+            // GET api/values
+        [HttpGet]
+        public ActionResult<IEnumerable<TodoItem>> Get()
+        {
+            if (Todos == null)
+            {
+                return null;
+            }
+
+            return Todos.Values;
+        }
+    ```
     2. Spin up service from command line
-    3. Demonstrate working with postman
-    4. Connect with angular app
+    ```
+    dotnet run
+    ```
+    3. Connect with angular app
 9. Implement a Get Single Operation
     1. Do code
     2. Spin up service from command line
