@@ -51,7 +51,7 @@ C# (pronounced C sharp) is a general-purpose, multi-paradigm programming languag
 - Delete the ValuesController.cs
 - update line 24 of launch settings to 
 ```
-"applicationUrl": "https://localhost:3001;http://localhost:3000",
+      "applicationUrl": "http://localhost:3000",
 ```
 5. Handle CORS by updating startup.cs
 - line 22 add 
